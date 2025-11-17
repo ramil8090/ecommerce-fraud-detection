@@ -18,12 +18,12 @@ Project-Root/
 └── uv.lock ← locked dependencies
 ```
 
-## Why This Project Matters
+## ✅ Why This Project Matters
 - Fraud detection is a critical challenge in the e-commerce industry: as online transactions rise, so do opportunities for abuse and fraudulent activity.
 - Using machine learning allows moving beyond static rule-based systems to adaptively learn from transaction data, detect subtle patterns, and reduce false positives (thus protecting legitimate users while catching fraudsters).
 - The full pipeline (data → train → serve) illustrates a practical deployment scenario for fraud detection in real-world settings.
 
-### 📊 Results & Findings
+## 📊 Results & Findings
 - The exploratory notebook (notebook.ipynb) highlights data distributions, class imbalance, feature importance, and model comparisons.
 - Best performing model - Random Forest Classifier achieved [**ROC-AUC = 0.97, precision = 0.94, recall = 0.61**] on the test dataset.
 - Feature importance shows that variables such as `shipping_distance_km`, `amount` (purchase amount), `account_age_days`, `avs_match`, `cvv_result` and `three_ds_flag` were strong discriminators of fraud vs non-fraud.
@@ -50,7 +50,7 @@ python predict.py
 python test.py
 ```
 
-## Using Docker
+## 🔮 Using Docker
 ```bash
 docker build -t ecommerce-fraud-prediction .
 docker run -it --rm -p 9696:9696 ecommerce-fraud-prediction:latest
@@ -104,7 +104,7 @@ curl --location 'http://127.0.0.1:9696/predict' \
 }'
 ```
 
-## Acknowledgements & References
+## 📚 Acknowledgements & References
 - Dataset from Kaggle: “E-commerce Fraud Detection” by umuttuygurr (https://www.kaggle.com/datasets/umuttuygurr/e-commerce-fraud-detection-dataset/data).
 - Inspired by various fraud detection research and industrial practices.
 - Built as part of the Machine Learning Zoomcamp 2025 midterm assignment.
