@@ -1,0 +1,13 @@
+[project]
+name = "midterm"
+version = "0.1.0"
+description = "E-commerce fraud detection. Machine Learning Zoomcamp 2025"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.121.1",
+    "pydantic>=2.12.4",
+    "scikit-learn>=1.7.2",
+    "typing>=3.10.0.0",
+    "uvicorn>=0.38.0",
+]
